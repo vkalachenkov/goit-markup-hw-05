@@ -71,7 +71,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--peculiarities-->
@@ -146,30 +146,39 @@
           <h2 class="section-name">Чем мы занимаемся</h2>
           <ul class="content-list">
             <li class="item">
-              <a href="" class="link">
+             <div class="img-doing" >
                 <img
                   src="./images/picture1squoosh.jpg"
                   width="370"
-                  alt="notebook"
-              /></a>
+                  alt="notebook"/>
+              <div class="label">
+                <p class="label-text">Десктопные приложения</p>
+              </div>
+            </div>
             </li>
             <li class="item">
-              <a href="" class="link">
+              <div class="img-doing" >
                 <img
                   src="./images/picture2squoosh.jpg"
                   width="370"
                   alt="phone"
-                />
-              </a>
+                /> 
+                <div class="label">
+                  <p class="label-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <a href="" class="link">
+              <div class="img-doing" >
                 <img
                   src="./images/picture3squoosh.jpg"
                   width="370"
                   alt="tablet"
-                />
-              </a>
+                /> 
+                <div class="label">
+                  <p class="label-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -451,7 +460,20 @@
             </li>
           </ul>
         </section>    
-      </div> 
-    </footer>
+       </div> 
+     </footer>
+
+     <!--Modal-->
+
+     <div class="backdrop is-hidden" data-modal>
+       <div class="modal">
+         <button type="button" class="close-model" data-modal-close>
+           <svg width="11" height="11" class="close">
+             <use href="./images/symbol-defs.svg#close"></use>
+          </svg>
+         </button>
+       </div>
+     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
